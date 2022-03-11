@@ -1,0 +1,10 @@
+:root {
+    --main-blue-color: #0065FC;
+    --second-blue-color: #DEEBFF;
+    --grey-color: #F2F2F2;
+    font-family: 'Istok Web', sans-serif;
+}
+
+h1 {
+    color: var(--main-blue-color);
+}
