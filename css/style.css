@@ -5,6 +5,83 @@
     font-family: 'Istok Web', sans-serif;
 }
 
-h1 {
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
     color: var(--main-blue-color);
+    margin-left: 3%;
+}
+
+nav{
+    width: 30%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.items {
+    list-style: none;
+    width: 35%;
+    text-align: center;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (min-width: 769px) { 
+    nav{
+        width: 40%;
+    }
+    .items:hover a{
+        color: var(--main-blue-color);
+        padding-top: 38px;
+        border-top-style: solid;
+        border-top-width: 3px;
+        width: fit-content;
+    }
+    a.active{
+        color: var(--main-blue-color);
+        padding-top: 38px;
+        border-top-style: solid;
+        border-top-width: 3px;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 768px) { 
+    .header {
+        flex-direction: column;
+    }
+    .menu{
+        justify-content: space-between;
+    }
+    nav{
+        width: 100%;
+    }
+    .items:hover a{
+        color: var(--main-blue-color);
+        padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width: 100%;
+    }
+    a.active{
+        color: var(--main-blue-color);
+        padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width: 100%;
+    }
 }
