@@ -15,11 +15,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
-.title {
-    color: var(--main-blue-color);
+.logo {
     margin-left: 3%;
+    height: 40px;
+    width: 120px;
 }
 
 nav{
@@ -48,6 +50,7 @@ nav{
 main {
     margin-left: 3%;
     margin-top: 2%;
+    margin-right: 3%;
 }
 
 main h2{
@@ -183,14 +186,47 @@ form {
     margin-right: 12px;
 }
 
+/* -------------------------------------------Container card--------------------------------------------- */
+
+.container_accommodation_popular{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.container_accommodation{
+    width: 60%;
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.container_popular{
+    width: 30%;
+}
+
+.container_card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container_card_popular{
+    display: flex;
+    flex-direction: column;
+
+}
+
 /* -------------------------------------------Card Accommodation--------------------------------------------- */
 
 .card_accommodation {
-    width: 18%;
+    width: 30%;
     background-color: white;
     padding: 5px;
     border-radius: 20px;
     transition: transform .8s ease, background-color .6s ease;
+    margin-top: 5%;
 }
 
 .card_accommodation:hover {
@@ -231,16 +267,17 @@ form {
 /* -------------------------------------------Popular Accommodation--------------------------------------------- */
 
 .popular_accommodation {
-    width: 30%;
+    width: 100%;
+    margin-top: 5%;
 }
 
-.container_card_popular{
+.a_card_popular{
     display: flex;
 }
 
 .img_popular_accommodation{
     width: 35%;
-    height: 170px;
+    height: 150px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -261,14 +298,14 @@ form {
     }
     .menu_items:hover a{
         color: var(--main-blue-color);
-        padding-top: 38px;
+        padding-top: 34px;
         border-top-style: solid;
         border-top-width: 3px;
         width: fit-content;
     }
     a.active{
         color: var(--main-blue-color);
-        padding-top: 38px;
+        padding-top: 34px;
         border-top-style: solid;
         border-top-width: 3px;
         width: fit-content;
@@ -299,17 +336,20 @@ form {
     }
     .menu_items:hover a{
         color: var(--main-blue-color);
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         border-bottom-style: solid;
         border-bottom-width: 3px;
         width: 100%;
     }
     a.active{
         color: var(--main-blue-color);
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         border-bottom-style: solid;
         border-bottom-width: 3px;
         width: 100%;
+    }
+    main {
+        margin-top: 8%;
     }
     .input-city {
         width: 60%;
