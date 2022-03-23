@@ -292,7 +292,17 @@ form {
 
 /* -------------------------------------------Media Queries--------------------------------------------- */
 
-@media (min-width: 992px) { 
+@media (max-width: 1024px) { 
+    .container_accommodation{
+        width: 55%;
+    }
+    
+    .container_popular{
+        width: 30%;
+    }
+}
+
+@media (min-width: 769px) { 
     nav{
         width: 40%;
     }
@@ -376,5 +386,15 @@ form {
         width: 20px;
         height: 18px;
         font-size: 10px;
+    }
+    .container_accommodation_popular {
+        flex-direction: column;
+    }
+    .container_popular{
+        margin-top: 2%;
+        width: auto;
+    }
+    .container_accommodation{
+        width: auto;
     }
 }
