@@ -313,7 +313,7 @@ form {
 }
 
 .title_activite {
-    padding: 10px;
+    /* padding: 10px 20px; */
     margin: 0;
 }
 
@@ -331,13 +331,13 @@ form {
 
 .card_activite_horizontal {
     box-shadow: 0 20px 20px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,.2);
-    height: 60%;
+    height: 40vh;
     border-radius: 20px;
 }
 
 .card_activite_horizontal_alt {
     box-shadow: 0 20px 20px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,.2);
-    height: 30%;
+    height: 20vh;
     border-radius: 20px;
 }
 
@@ -345,6 +345,22 @@ form {
     object-fit: cover;
     width: 20vw;
     height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img_activite_horizontale{
+    object-fit: cover;
+    width: 20vw;
+    height: 34vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img_activite_horizontale_alt{
+    object-fit: cover;
+    width: 20vw;
+    height: 15vh;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -367,6 +383,12 @@ form {
     }
     .popular_accommodation {
         width: 100% !important;
+    }
+    .principal_container_activite{
+        flex-direction: column;
+    }
+    .container_double_activite{
+        flex-direction: row;
     }
 }
 
@@ -490,5 +512,8 @@ form {
     }
     .card_activite_horizontal_alt{
         margin-bottom: 5%;
+    }
+    .container_double_activite{
+        flex-direction: column;
     }
 }
