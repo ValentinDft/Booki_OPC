@@ -390,6 +390,33 @@ form {
     .container_double_activite{
         flex-direction: row;
     }
+    .button-search{
+        width: 15%;
+    }
+    .input-city{
+        width: 20%;
+    }
+    .container_accommodation_popular {
+        flex-direction: column-reverse;
+    }
+    .container_popular{
+        width: auto !important;
+        background-color: var(--grey-color) !important;
+        padding: 20px !important;
+    }
+    .container_accommodation{
+        width: 100%;
+        background-color: white;
+        padding: 20px 0px;
+        margin: 10px;
+        flex-direction: row;
+    }
+    .container_card {
+        flex-direction: row;
+    }
+    .card_accommodation {
+        width: 28%;
+    }
 }
 
 @media (min-width: 769px) { 
@@ -476,20 +503,6 @@ form {
         width: 20px;
         height: 18px;
         font-size: 10px;
-    }
-    .container_accommodation_popular {
-        flex-direction: column-reverse;
-    }
-    .container_popular{
-        width: auto !important;
-        background-color: var(--grey-color) !important;
-        padding: 20px !important;
-    }
-    .container_accommodation{
-        width: 100%;
-        background-color: white;
-        padding: 20px 0px;
-        margin: 10px;
     }
     .container_card {
         flex-direction: column;
