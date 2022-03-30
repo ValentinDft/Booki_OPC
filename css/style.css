@@ -232,6 +232,7 @@ form {
     border-radius: 20px;
     transition: transform .8s ease, background-color .6s ease;
     margin-top: 5%;
+    box-shadow: 0 20px 20px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,.2);
 }
 
 .card_accommodation:hover {
@@ -295,7 +296,7 @@ form {
     height: auto;
 }
 
-/* -------------------------------------------Activite--------------------------------------------- */
+/* -----------------------------------------------------Activite----------------------------------------------------- */
 
 .section_activite {
     margin-top: 3%;
@@ -307,9 +308,16 @@ form {
     justify-content: space-between;
 }
 
+.container_img_activite{
+    height: 90%;
+}
+
 .container_title_activite{
     display: flex;
     align-items: center;
+    height: 10%;
+    border-radius: 20px;
+    padding: 0px 20px;
 }
 
 .title_activite {
@@ -321,6 +329,13 @@ form {
     height: 65vh;
     box-shadow: 0 20px 20px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,.2);
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform .8s ease, background-color .6s ease;
+}
+
+.card_activite_vertical:hover{
+    transform: scale(1.05);
+    background-color: var(--second-blue-color);
 }
 
 .container_double_activite{
@@ -333,18 +348,32 @@ form {
     box-shadow: 0 20px 20px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,.2);
     height: 40vh;
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform .8s ease, background-color .6s ease;
+}
+
+.card_activite_horizontal:hover{
+    transform: scale(1.05);
+    background-color: var(--second-blue-color);
 }
 
 .card_activite_horizontal_alt {
     box-shadow: 0 20px 20px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,.2);
     height: 20vh;
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform .8s ease, background-color .6s ease;
+}
+
+.card_activite_horizontal_alt:hover{
+    transform: scale(1.05);
+    background-color: var(--second-blue-color);
 }
 
 .img_activite{
     object-fit: cover;
     width: 20vw;
-    height: 90%;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -515,18 +544,35 @@ form {
     }
     .img_activite{
         width: 100%;
+        height: 100%;
+    }
+    .container_img_activite{
         height: 80%;
+    }
+    .container_title_activite{
+        height: 20%;
     }
     .card_activite_vertical{
         margin-bottom: 5%;
+        height: 32vh;
     }
     .card_activite_horizontal{
         margin-bottom: 5%;
+        height: 32vh;
+    }
+    .img_activite_horizontale{
+        width: 100%;
+        height: 80%;
     }
     .card_activite_horizontal_alt{
         margin-bottom: 5%;
+        height: 32vh;
     }
     .container_double_activite{
         flex-direction: column;
+    }
+    .img_activite_horizontale_alt{
+        width: 100%;
+        height: 80%;
     }
 }
