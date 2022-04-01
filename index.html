@@ -23,7 +23,7 @@
 
         <nav>
             <ul class="menu">
-                <li class="menu_items">
+                <li class="menu_items active">
                     <a href="#hebergement" class="active">Hébergements</a>
                 </li>
                 <li class="menu_items">
@@ -40,12 +40,12 @@
         </div>
         
 
-        <form action="">
+        <form action="/" method="post">
             <div class="icon-location">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
             
-            <input type="text" name="" id="" value="Marseille, France" class="input-city">
+            <input type="text" name="city" value="Marseille, France" class="input-city">
             <button class="button-search">Recherche</button>
             <button class="button-search button-search-mobile">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -229,7 +229,11 @@
             </div>
 
             <div class="container_accommodation container_popular">
-                <h2>Les plus populaires </h2>
+                <div class="title_popular">
+                    <h2>Les plus populaires </h2>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                
 
                 <div class="container_card_popular">
 
@@ -353,6 +357,41 @@
         </section>
 
     </main>
+
+    <footer>
+        <ul class="container_collum_footer">
+            <h4>A propos</h4>
+            <li class="item_footer">
+                <a href="#">Fonctionnement du site</a>
+            </li>
+            <li class="item_footer">
+                <a href="">Conditions générales de vente</a>
+            </li>
+            <li class="item_footer">
+                <a href="">Données et confidentialité</a>
+            </li>
+        </ul>
+
+        <ul class="container_collum_footer">
+            <h4>Nos hébergements</h4>
+            <li class="item_footer">
+                <a href="#">Charte qualité</a>
+            </li>
+            <li class="item_footer">
+                <a href="">Soumettre votre hôtel</a>
+            </li>
+        </ul>
+
+        <ul class="container_collum_footer">
+            <h4>Assitance</h4>
+            <li class="item_footer">
+                <a href="#">Centre d'aide</a>
+            </li>
+            <li class="item_footer">
+                <a href="">Nous contacter</a>
+            </li>
+        </ul>
+    </footer>
     
 </body>
 </html>
