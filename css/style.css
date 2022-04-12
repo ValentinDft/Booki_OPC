@@ -478,7 +478,7 @@ footer{
         width: 45%;
     }
     .popular_accommodation {
-        width: 100% !important;
+        width: 98% !important;
     }
     .principal_container_activite{
         flex-direction: column;
@@ -515,20 +515,20 @@ footer{
     }
     .card_activite_vertical{
         margin-bottom: 5%;
-        height: 35vh;
+        height: 30vh;
     }
     .img_activite{
         width: 100%;
     }
     .container_img_activite{
-        height: 80%;
+        height: 85%;
     }
     .container_title_activite{
         height: 20%;
     }
     .card_activite_horizontal{
         margin-bottom: 5%;
-        height: 35vh;
+        height: 34vh;
         width: 40%;
     }
     .img_activite_horizontale{
@@ -536,7 +536,7 @@ footer{
     }
     .card_activite_horizontal_alt{
         margin-bottom: 5%;
-        height: 35vh;
+        height: 34vh;
         width: 40%;
     }
     .img_activite_horizontale_alt{
