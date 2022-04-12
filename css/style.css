@@ -333,12 +333,32 @@ form {
     height: 90%;
 }
 
+.container_img_activite{
+    height: 90%;
+}
+
+.container_img_activite_horizontal{
+    height: 85%;
+}
+
+.container_img_activite_horizontal_alt{
+    height: 75%;
+}
+
 .container_title_activite{
     display: flex;
     align-items: center;
     height: 10%;
     border-radius: 20px;
     padding: 0px 20px;
+}
+
+.container_title_activite_horizontal{
+    height: 15%;
+}
+
+.container_title_activite_horizontal_alt{
+    height: 25%;
 }
 
 .title_activite{
@@ -351,6 +371,7 @@ form {
     border-radius: 20px;
     cursor: pointer;
     transition: transform .8s ease, background-color .6s ease;
+    width: 20vw;
 }
 
 .card_activite_vertical:hover{
@@ -370,6 +391,7 @@ form {
     border-radius: 20px;
     cursor: pointer;
     transition: transform .8s ease, background-color .6s ease;
+    width: 20vw;
 }
 
 .card_activite_horizontal:hover{
@@ -383,6 +405,7 @@ form {
     border-radius: 20px;
     cursor: pointer;
     transition: transform .8s ease, background-color .6s ease;
+    width: 20vw;
 }
 
 .card_activite_horizontal_alt:hover{
@@ -401,7 +424,7 @@ form {
 .img_activite_horizontale{
     object-fit: cover;
     width: 20vw;
-    height: 34vh;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -409,7 +432,7 @@ form {
 .img_activite_horizontale_alt{
     object-fit: cover;
     width: 20vw;
-    height: 15vh;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -509,7 +532,6 @@ footer{
         width: 40%;
     }
     .img_activite_horizontale{
-        height: 28vh;
         width: 100%;
     }
     .card_activite_horizontal_alt{
@@ -518,11 +540,25 @@ footer{
         width: 40%;
     }
     .img_activite_horizontale_alt{
-        height: 28vh;
         width: 100%;
     }
     .container_title_activite{
         height: 15%;
+    }
+    .container_title_activite_horizontal {
+        height: 15%;
+    }
+    .container_title_activite_horizontal_alt {
+        height: 15%;
+    }
+    .container_img_activite_horizontal_alt {
+        height: 85%;
+    }
+    .container_img_activite {
+        height: 85%;
+    }
+    .card_activite_vertical{
+        width: 100%;
     }
 }
 
@@ -637,6 +673,12 @@ footer{
     .container_img_activite{
         height: 80%;
     }
+    .container_img_activite_horizontal{
+        height: 80%;
+    }
+    .container_img_activite_horizontal_alt{
+        height: 80%;
+    }
     .container_title_activite{
         height: 20%;
     }
@@ -651,7 +693,6 @@ footer{
     }
     .img_activite_horizontale{
         width: 100%;
-        height: 80%;
     }
     .card_activite_horizontal_alt{
         margin-bottom: 5%;
@@ -663,7 +704,6 @@ footer{
     }
     .img_activite_horizontale_alt{
         width: 100%;
-        height: 80%;
     }
     .container_popular{
         width: 100% !important;
